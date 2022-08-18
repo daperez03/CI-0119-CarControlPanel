@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.16.1.4.jar" version="1.0">
+  This file is intended to be loaded by Logisim http://logisim.altervista.org
+
+  <lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3"/>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(600,200)" to="(610,200)"/>
+    <wire from="(670,200)" to="(680,200)"/>
+    <wire from="(1310,170)" to="(1330,170)"/>
+    <wire from="(1310,190)" to="(1330,190)"/>
+    <wire from="(1310,210)" to="(1330,210)"/>
+    <wire from="(1310,230)" to="(1330,230)"/>
+    <wire from="(1400,440)" to="(1420,440)"/>
+    <wire from="(1420,440)" to="(1420,450)"/>
+    <wire from="(1420,440)" to="(1440,440)"/>
+    <wire from="(1420,370)" to="(1420,390)"/>
+    <wire from="(1400,370)" to="(1420,370)"/>
+    <wire from="(1420,370)" to="(1440,370)"/>
+    <wire from="(1420,300)" to="(1420,330)"/>
+    <wire from="(1400,300)" to="(1420,300)"/>
+    <wire from="(1420,300)" to="(1440,300)"/>
+    <wire from="(1400,510)" to="(1420,510)"/>
+    <wire from="(1420,510)" to="(1440,510)"/>
+    <wire from="(1420,510)" to="(1420,520)"/>
+    <wire from="(820,160)" to="(820,230)"/>
+    <wire from="(820,160)" to="(1160,160)"/>
+    <wire from="(1160,160)" to="(1160,230)"/>
+    <wire from="(120,160)" to="(120,230)"/>
+    <wire from="(460,160)" to="(460,230)"/>
+    <wire from="(120,160)" to="(460,160)"/>
+    <wire from="(120,730)" to="(370,730)"/>
+    <wire from="(370,230)" to="(460,230)"/>
+    <wire from="(120,230)" to="(370,230)"/>
+    <wire from="(880,230)" to="(1160,230)"/>
+    <wire from="(880,730)" to="(1160,730)"/>
+    <wire from="(820,230)" to="(880,230)"/>
+    <wire from="(550,160)" to="(550,250)"/>
+    <wire from="(460,160)" to="(550,160)"/>
+    <wire from="(730,160)" to="(730,250)"/>
+    <wire from="(550,250)" to="(730,250)"/>
+    <wire from="(550,160)" to="(730,160)"/>
+    <wire from="(730,160)" to="(820,160)"/>
+    <wire from="(1000,200)" to="(1010,200)"/>
+    <wire from="(260,200)" to="(280,200)"/>
+    <wire from="(120,460)" to="(370,460)"/>
+    <wire from="(370,230)" to="(370,460)"/>
+    <wire from="(120,230)" to="(120,460)"/>
+    <wire from="(120,460)" to="(120,730)"/>
+    <wire from="(880,460)" to="(1160,460)"/>
+    <wire from="(1160,230)" to="(1160,460)"/>
+    <wire from="(880,230)" to="(880,460)"/>
+    <wire from="(1160,460)" to="(1160,730)"/>
+    <wire from="(370,460)" to="(370,640)"/>
+    <wire from="(370,640)" to="(370,730)"/>
+    <wire from="(880,640)" to="(880,730)"/>
+    <wire from="(880,460)" to="(880,640)"/>
+    <wire from="(550,640)" to="(550,730)"/>
+    <wire from="(370,640)" to="(550,640)"/>
+    <wire from="(370,730)" to="(550,730)"/>
+    <wire from="(700,640)" to="(700,730)"/>
+    <wire from="(700,640)" to="(880,640)"/>
+    <wire from="(550,730)" to="(700,730)"/>
+    <wire from="(700,730)" to="(880,730)"/>
+    <comp lib="7" loc="(412,413)" name="Text">
+      <a name="font" val="Dialog bold 14"/>
+    </comp>
+    <comp lib="0" loc="(1420,390)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1440,370)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="6"/>
+      <a name="label" val="°C"/>
+    </comp>
+    <comp lib="7" loc="(644,179)" name="Text">
+      <a name="text" val="Direccionales"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="0" loc="(1330,210)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="R"/>
+    </comp>
+    <comp lib="6" loc="(300,320)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#ff091b"/>
+    </comp>
+    <comp lib="6" loc="(1400,370)" name="Slider">
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="6" loc="(260,630)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(1420,520)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="7" loc="(993,185)" name="Text">
+      <a name="text" val="Luz frontal"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="6" loc="(1020,370)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1060,370)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(600,200)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#00ff80"/>
+    </comp>
+    <comp lib="7" loc="(286,350)" name="Text">
+      <a name="text" val=" °C"/>
+      <a name="font" val="Dialog bold 14"/>
+    </comp>
+    <comp lib="7" loc="(300,609)" name="Text">
+      <a name="text" val="PSI"/>
+      <a name="font" val="Dialog bold 14"/>
+    </comp>
+    <comp lib="7" loc="(1029,560)" name="Text">
+      <a name="text" val="Sensor de colisíon"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="0" loc="(610,200)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="L"/>
+    </comp>
+    <comp lib="6" loc="(1310,160)" name="DipSwitch"/>
+    <comp lib="7" loc="(250,548)" name="Text">
+      <a name="text" val="Presión de neumaticos"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="0" loc="(1330,190)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="L"/>
+    </comp>
+    <comp lib="0" loc="(1420,330)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="6" loc="(600,490)" name="Hex Digit Display"/>
+    <comp lib="7" loc="(692,227)" name="Text">
+      <a name="text" val="R"/>
+      <a name="font" val="Dialog bold 12"/>
+    </comp>
+    <comp lib="0" loc="(1440,300)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Velocimetro"/>
+    </comp>
+    <comp lib="6" loc="(1010,200)" name="LED">
+      <a name="color" val="#00ff80"/>
+    </comp>
+    <comp lib="6" loc="(260,200)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#00ff80"/>
+    </comp>
+    <comp lib="6" loc="(1400,440)" name="Slider">
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="6" loc="(1120,320)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#ff091b"/>
+    </comp>
+    <comp lib="6" loc="(680,200)" name="LED">
+      <a name="color" val="#00ff80"/>
+    </comp>
+    <comp lib="7" loc="(223,295)" name="Text">
+      <a name="text" val="Temperatura"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="7" loc="(646,420)" name="Text">
+      <a name="text" val="Velocimetro"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="0" loc="(670,200)" name="Tunnel">
+      <a name="label" val="R"/>
+    </comp>
+    <comp lib="6" loc="(680,490)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(1420,450)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(280,200)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="ON"/>
+    </comp>
+    <comp lib="7" loc="(1108,348)" name="Text">
+      <a name="text" val="L"/>
+      <a name="font" val="Dialog bold 14"/>
+    </comp>
+    <comp lib="7" loc="(1046,293)" name="Text">
+      <a name="text" val="Combustible"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="6" loc="(1400,510)" name="Slider">
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(1440,510)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="6"/>
+      <a name="label" val="Li"/>
+    </comp>
+    <comp lib="0" loc="(1330,230)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="LIGHT"/>
+    </comp>
+    <comp lib="6" loc="(640,490)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(1000,200)" name="Tunnel">
+      <a name="label" val="LIGHT"/>
+    </comp>
+    <comp lib="0" loc="(1440,440)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="6"/>
+      <a name="label" val="PSI"/>
+    </comp>
+    <comp lib="0" loc="(1330,170)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="ON"/>
+    </comp>
+    <comp lib="7" loc="(273,185)" name="Text">
+      <a name="text" val="Encendido"/>
+      <a name="font" val="Dialog bold 13"/>
+    </comp>
+    <comp lib="6" loc="(240,370)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1040,600)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="color" val="#ff091b"/>
+    </comp>
+    <comp lib="6" loc="(200,370)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(310,580)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#ff091b"/>
+    </comp>
+    <comp lib="7" loc="(726,463)" name="Text">
+      <a name="text" val="KM/H"/>
+      <a name="font" val="Dialog bold 14"/>
+    </comp>
+    <comp lib="6" loc="(1400,300)" name="Slider"/>
+    <comp lib="7" loc="(637,144)" name="Text">
+      <a name="text" val="Panel de Instrumentos de un Vehiculo"/>
+      <a name="font" val="Dialog bold 20"/>
+    </comp>
+    <comp lib="6" loc="(220,630)" name="Hex Digit Display"/>
+    <comp lib="7" loc="(592,229)" name="Text">
+      <a name="text" val="L"/>
+      <a name="font" val="Dialog bold 12"/>
+    </comp>
+  </circuit>
+  <circuit name="Decimal2">
+    <a name="circuit" val="Decimal2"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+  </circuit>
+  <circuit name="Decimal3">
+    <a name="circuit" val="Decimal3"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+  </circuit>
+</project>
