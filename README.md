@@ -1,4 +1,4 @@
-# PI_Proyecto
+# Proyecto Integrador
 
 ## Integrantes
 
