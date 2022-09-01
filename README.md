@@ -12,6 +12,6 @@
 
 ## Avances
 
-![Primer Avance](./Avances/PrimerAvance)
+* ![Primer Avance](./Avances/PrimerAvance)
 
 
