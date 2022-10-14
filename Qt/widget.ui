@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1125</width>
+    <height>782</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QPushButton" name="Cerrar">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>730</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Encender">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>20</y>
+     <width>180</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Encender Vehiculo</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>290</y>
+     <width>601</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="Velocidad">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="handleWidth">
+       <number>6</number>
+      </property>
+      <widget class="QLCDNumber" name="LCDVelocidad">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Gidugu</family>
+         <italic>true</italic>
+        </font>
+       </property>
+      </widget>
+      <widget class="QSlider" name="SliderVelocidad">
+       <property name="minimumSize">
+        <size>
+         <width>268</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="maximum">
+        <number>0</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="VelocidadLabel">
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Gidugu</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>KM/H</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>401</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="Temperatura">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="handleWidth">
+       <number>6</number>
+      </property>
+      <widget class="QLCDNumber" name="LCDTemperatura">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Gidugu</family>
+         <italic>true</italic>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="TemperaturaLabel">
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Gidugu</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>°C</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>110</y>
+     <width>401</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="Gasolina">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="handleWidth">
+       <number>6</number>
+      </property>
+      <widget class="QLCDNumber" name="LCDGasolina_2">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Gidugu</family>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="value" stdset="0">
+        <double>63.000000000000000</double>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="GasolinaLabel_2">
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Gidugu</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Litros</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>490</y>
+     <width>341</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="Presion_Neumaticos">
+    <item>
+     <layout class="QVBoxLayout" name="Neumaticos34">
+      <item>
+       <widget class="QLCDNumber" name="lcdNeumatico_4"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNeumatico_3"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="Neumaticos12">
+      <item>
+       <widget class="QLCDNumber" name="lcdNeumatico_1"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNeumatico_2"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>21</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>PSI</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="Encendido_Apagado">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>0</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Jamrul</family>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Apagado</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Cerrar</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>539</x>
+     <y>640</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>447</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SliderVelocidad</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>LCDVelocidad</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>459</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>537</x>
+     <y>292</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
