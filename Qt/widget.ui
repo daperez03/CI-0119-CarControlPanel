@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1125</width>
-    <height>782</height>
+    <width>1240</width>
+    <height>801</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,8 +29,8 @@
   <widget class="QPushButton" name="Encender">
    <property name="geometry">
     <rect>
-     <x>930</x>
-     <y>20</y>
+     <x>1050</x>
+     <y>10</y>
      <width>180</width>
      <height>25</height>
     </rect>
@@ -42,10 +42,10 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>290</y>
-     <width>601</width>
-     <height>171</height>
+     <x>440</x>
+     <y>300</y>
+     <width>661</width>
+     <height>211</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="Velocidad">
@@ -123,9 +123,9 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>110</y>
-     <width>401</width>
-     <height>131</height>
+     <y>130</y>
+     <width>611</width>
+     <height>141</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="Temperatura">
@@ -185,10 +185,10 @@
   <widget class="QWidget" name="horizontalLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>780</x>
-     <y>110</y>
-     <width>401</width>
-     <height>131</height>
+     <x>930</x>
+     <y>120</y>
+     <width>461</width>
+     <height>151</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="Gasolina">
@@ -226,7 +226,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="GasolinaLabel_2">
+     <widget class="QLabel" name="GasolinaLabel">
       <property name="minimumSize">
        <size>
         <width>20</width>
@@ -252,9 +252,9 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>490</y>
-     <width>341</width>
-     <height>201</height>
+     <y>540</y>
+     <width>461</width>
+     <height>221</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="Presion_Neumaticos">
@@ -279,7 +279,7 @@
      </layout>
     </item>
     <item>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="PresionLabel">
       <property name="font">
        <font>
         <pointsize>21</pointsize>

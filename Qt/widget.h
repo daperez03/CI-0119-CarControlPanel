@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -14,6 +15,7 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+    int numRandom();
 private slots:
     void on_Encender_clicked();
     void Temperatura_Value();
@@ -22,9 +24,9 @@ private slots:
     void Wheels_Value_2();
     void Wheels_Value_3();
     void Wheels_Value_4();
-    void on_Encender_pressed();
-
 private:
     Ui::Widget *ui;
+    QTimer *timer;
+    QTimer *timerGas;
 };
 #endif // WIDGET_H
