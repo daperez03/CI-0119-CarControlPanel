@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = untitled1.0.0
-DISTDIR = /home/daperez01/Downloads/untitled(3)/untitled/.tmp/untitled1.0.0
+DISTDIR = /home/daperez01/Desktop/CursosActuales/PI/PI_Proyecto/Avances/TercerAvance/PI_P3/.tmp/untitled1.0.0
 LINK          = g++
 LFLAGS        = -no-pie -Wl,-O1
 LIBS          = $(SUBLIBS) /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lGL -lpthread   
@@ -360,6 +360,7 @@ distdir: FORCE
 	$(COPY_FILE) --parents src/QLedLabel.cpp src/main.cpp src/widget.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents widget.ui $(DISTDIR)/
 
+
 clean: compiler_clean 
 	-$(DEL_FILE) $(OBJECTS)
 	-$(DEL_FILE) *~ core *.core
@@ -413,7 +414,7 @@ compiler_moc_header_clean:
 moc_QLedLabel.cpp: src/QLedLabel.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include '/home/daperez01/Downloads/untitled(3)/untitled/moc_predefs.h' -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I'/home/daperez01/Downloads/untitled(3)/untitled' -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/QLedLabel.h -o moc_QLedLabel.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/daperez01/Desktop/CursosActuales/PI/PI_Proyecto/Avances/TercerAvance/PI_P3/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/daperez01/Desktop/CursosActuales/PI/PI_Proyecto/Avances/TercerAvance/PI_P3 -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/QLedLabel.h -o moc_QLedLabel.cpp
 
 moc_widget.cpp: src/widget.h \
 		src/ui_widget.h \
@@ -421,7 +422,7 @@ moc_widget.cpp: src/widget.h \
 		src/Funciones.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include '/home/daperez01/Downloads/untitled(3)/untitled/moc_predefs.h' -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I'/home/daperez01/Downloads/untitled(3)/untitled' -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/widget.h -o moc_widget.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/daperez01/Desktop/CursosActuales/PI/PI_Proyecto/Avances/TercerAvance/PI_P3/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/daperez01/Desktop/CursosActuales/PI/PI_Proyecto/Avances/TercerAvance/PI_P3 -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/widget.h -o moc_widget.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:

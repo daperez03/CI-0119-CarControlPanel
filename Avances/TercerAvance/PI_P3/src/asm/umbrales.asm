@@ -19,4 +19,4 @@ global umbrales
       xor eax, eax
       mov rax, 0
     Fin:
-      ret  
+      ret
