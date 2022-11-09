@@ -1,9 +1,8 @@
 #include <iostream>
-
 /* TODO(Randy) Este programa debe recibir los umbrales y dato a evaluar,
 la funcion de este es devolver un boleano al respecto si estos umbrales
 han sido sobrepasados*/
-extern "C" int umbrales(int data, int min, int max);
+//extern int umbrales(int data, int min, int max);
 /* TODO(Daniel) Este programa debe el dato a evaluar,la funcion de este es
 devolver un un decremento o el dato sin modficaciones, todo esto
 dependiendo de un una simulacion mediante un random, importante: las gasolina
@@ -17,12 +16,28 @@ extern "C" int temperature_simulation(int data);
 devolver un un decremento o el dato sin modficaciones, todo esto
 dependiendo de un una simulacion mediante un random, importante: las llantas
 una vez se desinflen no pueden volver a inflarce*/
-extern "C" int pressure_simulation(int data);
+//extern "C" int pressure_simulation(int data);
 
 // Implementamos a partir de aca, debemos guiarnos del ejemplo inferior
 
+int main() {
+  int64_t gas = 100;
+  int64_t temperatura = 100;
+  while (gas != 0) {
+    std::cout << "Gas: ";
+    gas = gas_simulation(gas);
+    std::cout << gas << std::endl;
+    std::cout << "Temperatura: ";
+    temperatura = temperature_simulation(temperatura);
+    std::cout << temperatura << std::endl;
+  }
+  return EXIT_SUCCESS;
+}
+
+
+
 // Ejemplo de ensambla en C:
-extern "C" int func();
+/*extern "C" int func();
 asm(
    R"(
       .globl func
@@ -51,4 +66,4 @@ int main() {
       "movq $2,  %rdi\n\t" // this program returns 2
       "syscall"
    );
-}
+}*/
