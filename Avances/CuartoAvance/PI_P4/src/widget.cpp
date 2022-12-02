@@ -214,15 +214,14 @@ void Widget::on_btnLucesEmergencia_clicked() {
 
 void Widget::SensorAnticolision() {
   if (this -> Encendido) {
-    ui.widget_11->setVisible(true);
-    // mutex.lock();
-    // bool anticolision = 1 == (rand()%20)/*anticollision_simulation()*/;
-    // mutex.unlock();
-    // if(anticolision) {
-    //   ui.widget_11->setVisible(true);
-    //   system("(speaker-test -t sine -f 1000)& pid=$!; sleep 0.1s; kill -9 $pid");
-    // } else {
-    //   ui.widget_11->setVisible(false);
-    // }
+    mutex.lock();
+    bool anticolision = 1 == (rand()%20)/*anticollision_simulation()*/;
+    mutex.unlock();
+    if(anticolision) {
+      ui.widget_11->setVisible(true);
+      system("(speaker-test -t sine -f 1000)& pid=$!; sleep 0.1s; kill -9 $pid");
+    } else {
+      ui.widget_11->setVisible(false);
+    }
   }
 }
